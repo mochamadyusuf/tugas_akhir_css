@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+
+/* Navbar */
+nav a.navbar-brand {
+  font-family: "Comforter", cursive;
+  color: #343a40;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+/* Section */
+section {
+  margin-bottom: 200px;
+}
+
+.container-fluid {
+  margin-top: 200px;
+}
+
+.carousel-item img {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+}
+
+.wadah .card:hover {
+  position: relative;
+  transform: translateY(15px);
+  transition: 0.3s;
+}
+
+#profile {
+  /* position: relative;
+  top: -230px; */
+  margin-top: -230px;
+}
+
+#about {
+  margin: 100px 0;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
+  section {
+    margin-bottom: 150px;
+  }
+
+  .container-fluid {
+    margin-top: 100px;
+  }
+
+  .wadah {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wadah .card {
+    margin: 5px;
+  }
+
+  #profile {
+    margin-top: 50px;
+  }
+}
+
+/* Animasi */
+@-webkit-keyframes myrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes myrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#animasi1 {
+  -webkit-animation: myrotate;
+  animation: myrotate 5s infinite;
+}
